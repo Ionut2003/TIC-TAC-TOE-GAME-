@@ -1,35 +1,44 @@
+/* RESETS */
 *{
 	font-family: "Comic Sans MS";
 	font-size: 20px;
+	margin: 0;
+	padding: 0;
 }
+
+body{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+/* TABLE STYLES */
+
+
 table {  
 	margin: 0 auto;
-	width: 100%;
-	border-width: 2px 2px 2px 2px;
-	height: 200px;
-	border-style: solid;  
-	border-color: transparent;
-	display: table;  
-	padding: 10px;   
+	width: 80%;
+	display: table; 
+	background-color: yellow; 
 
 	
 }
 .border1{  
-	background-color: yellow;
-	border-width: 1px 1px 1px 1px;
-	width: 73px;
-	height: 50px;
-	border-style: solid;  
-	border-color: cyan;
+	border: 1px solid cyan;
 	text-align: center;
-	display: table-cell;
+	width: 100px;
+	height: 100px;
+	
 }
-body{
-	background-color: black;
-	color: red;
-}
-.restart{
-	position: absolute;
+
+/* RESTART BUTTON */
+
+#restart{
+	width: 50%;
+	align-self: center;
+	border-radius: 15px;
 	
 }
 h1{
@@ -38,46 +47,46 @@ h1{
 	font-size: 20px;
 }
 .playerMarks{
-	position: relative;
 	width: auto;
-	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
 }
 .playerMark{
-	position: relative;
 	border: 2px solid cyan;
 	width: 40px;
 	height: 40px;
-	left: 17%;
 	border-radius: 40px;
-	line-height: 40px;
 	text-align: center;
 	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
 }
 .computerMark{
-	left: 73%;
-	position: relative;
 	border: 2px solid cyan;
 	width: 40px;
 	height: 40px;
-	bottom: 44px;
 	border-radius: 40px;
-	line-height: 40px;
-	text-align: center;
 	font-size: 40px;
 	color: lime;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .player{
-	display: inline-block;
-	position: relative;
-	top: -37px;
-	left: 16%;
 	color: blue;
 }
 .computer{
-	float: right;
-	display: inline-block;
-	position: relative;
-	top: -40px;
-	right: 8%;
 	color: blue;
+}
+
+.mark_info {
+	width: fit-content;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
 }
